@@ -1,25 +1,52 @@
-# Ex5 Stack Operations
-## DATE:
+# EX.NO : 1(E) Stack Operations
+## DATE: 01/03/2025
 ## AIM:
 To write a C function to perform push and pop operation of the stack in the infix to postfix conversion.
 
 ## Algorithm
-1. 
-2. 
-3. 
-4.  
-5.   
+1. 1. Initialize top as -1 and declare stack as a character array. 
+2. To push, increment top and assign the character to stack[top]. 
+3. To pop, check if top is -1 and return -1 if true. 
+4. If not, return stack[top] and decrement top.
+  
 
 ## Program:
 ```
-/*
-Program to find and display the priority of the operator in the given Postfix expression
-Developed by: 
-RegisterNumber:  
-*/
-```
 
+Program to perform push and pop operation of the stack in the infix to postfix conversion.
+Developed by: MADHAN BABU P
+RegisterNumber:  212222230075
+
+```
+```c
+
+#include<stdio.h>
+
+char stack[100];
+int top = -1;
+
+void push(char x)
+{
+   top++;
+   stack[top] = x;
+}
+
+char pop()
+{
+   if(top == -1)
+   {
+       printf("Stack Underflow");
+   }
+   else
+   {
+       return stack[top--];
+   }
+   return -1;
+}
+
+```
 ## Output:
+![437311737-49cba1a6-9421-47cd-a84e-3118bf29135c](https://github.com/user-attachments/assets/1c9baf94-3960-4799-a1be-a64788f17e8a)
 
 
 
